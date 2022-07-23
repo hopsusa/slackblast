@@ -115,6 +115,7 @@ async def get_user_names(array_of_user_ids, logger, client):
 
 @slack_app.command("/slackblast")
 @slack_app.command("/backblast")
+@slack_app.command("/bb1")
 async def command(ack, body, respond, client, logger):
     await ack()
     today = datetime.now(timezone.utc).astimezone()
